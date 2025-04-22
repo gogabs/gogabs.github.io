@@ -1,0 +1,30 @@
+baseURL = "https://blog.bonag.io"
+title = "Blog do Gabs"
+languageCode = "pt-br"
+defaultContentLanguage = "pt-br"
+enableEmoji = true
+
+[outputs]
+  section = []
+  taxonomy = []
+  term = []
+
+[languages.pt-br]
+  name = "Português"
+  languageCode = "pt-br"
+
+[menus]
+  [[menus.main]]
+    name = "Blog"
+    pageRef = "/"
+    weight = 10
+
+  [[menus.main]]
+    name = "RSS"
+    pageRef = "/index.xml"
+    weight = 20
+
+  [[menus.main]]
+    name = "Fediverso"
+    url = "https://social.laronjas.club/@gabs"
+    weight = 30

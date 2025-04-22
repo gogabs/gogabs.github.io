@@ -1,0 +1,9 @@
+<nav>
+    <ul>
+        {{ range site.Menus.main }}
+            <li>
+                <a href="{{ or .URL .PageRef }}">{{ .Name }}</a>
+            </li>
+        {{ end }}
+    </ul>
+</nav>

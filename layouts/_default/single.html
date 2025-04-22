@@ -1,0 +1,14 @@
+{{ define "title" }}
+    {{ .Title }} &ndash; {{ site.Title }}
+{{ end }}
+
+{{ define "main" }}
+    <hgroup>
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Date | time.Format ":date_long" }}</p>
+    </hgroup>
+
+    <section>
+        {{ .Content }}
+    </section>
+{{ end }}

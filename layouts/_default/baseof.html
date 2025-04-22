@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection "ltr" }}">
+<head>
+    {{ partial "head.html" . }}
+    
+    <title>
+        {{ block "title" . }}
+            {{ site.Title }}
+        {{ end }}
+    </title>
+</head>
+
+<body>
+    <header class="container">
+        {{ partial "header.html" . }}
+    </header>
+
+    <main class="container">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="container">
+            <p>Feito com <a href="https://gohugo.io" target="_blank">Hugo</a> e hospedado em <a href="https://pages.github.com" target="_blank">GitHub Pages</a>.</p>
+    </footer>
+</body>
+</html>
